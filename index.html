@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car Review Website</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .car {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .car img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .specs {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .specs li {
+      margin: 5px 0;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Contact Section Styling */
+    .contact {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .contact h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+      box-sizing: border-box;
+    }
+
+    .contact input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚗 Car Review Central</h1>
+  </header>
+
+  <main>
+    <section class="car" id="landcruiser">
+      <h2>Toyota Land Cruiser</h2>
+      <img src="car2.jpg" alt="Toyota Land Cruiser">
+      <ul class="specs">
+        <li><strong>Engine:</strong> 5.7L V8</li>
+        <li><strong>Horsepower:</strong> 381 HP</li>
+        <li><strong>Torque:</strong> 401 lb-ft</li>
+        <li><strong>Price:</strong> $85,000</li>
+      </ul>
+      <button onclick="showDetails('landcruiser')">More Info</button>
+    </section>
+
+    <section class="car" id="bmwx7">
+      <h2>BMW X7</h2>
+      <img src="car1.jpg" alt="BMW X7">
+      <ul class="specs">
+        <li><strong>Engine:</strong> 3.0L I6 Turbo</li>
+        <li><strong>Horsepower:</strong> 335 HP</li>
+        <li><strong>Torque:</strong> 330 lb-ft</li>
+        <li><strong>Price:</strong> $75,000</li>
+      </ul>
+      <button onclick="showDetails('bmwx7')">More Info</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Send">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Car Review Central. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.car {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.car img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.specs {
+  list-style: none;
+  padding-left: 0;
+}
+
+.specs li {
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: #0074D9;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
